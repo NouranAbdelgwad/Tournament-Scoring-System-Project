@@ -1,0 +1,210 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit {
+    border: 1px solid #4B91F1;
+    border-radius: 5px;
+    background-color: #4B91F1;
+    width: 150px;
+    color: white;
+    margin-top: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+
+.home {
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("../images/college2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+.VersaQuest{
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("../images/tournament.jpg");
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home p {
+    padding-left: 50px;
+}
+
+.home button {
+    margin-left: 50px;
+    padding: 15px;
+    border: 1px solid #4B91F1;
+    border-radius: 20px;
+    background-color: #4B91F1;
+    color: white;
+    margin-top: 10px;
+}
+
+.home h1 {
+    padding: 20px 0px 0px 50px;
+    font-size: 3rem;
+}
+
+/* phones */
+@media (max-width: 576px) {
+    .home {
+        height: 450px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("../images/college2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        border-radius: 20px;
+    }
+
+    .home h1 {
+        padding: 20px 0px 0px 20px;
+        font-size: 3rem;
+    }
+
+    .home p {
+        padding-left: 20px;
+    }
+
+    .home button {
+        margin-left: 50px;
+        padding: 15px;
+        border: 1px solid #4B91F1;
+        border-radius: 20px;
+        background-color: #4B91F1;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.login {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.sign {
+    border-radius: 20px;
+}
+
+.page {
+    align-items: center;
+}
+
+.sign-in {
+    border: 1px solid #4B91F1;
+    border-radius: 5px;
+    background-color: #4B91F1;
+    color: white;
+    margin-top: 10px;
+}
+
+.team_individual {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+}
+
+.event-img {
+    border-radius: 20px;
+    width: 150px;
+    object-fit: cover;
+}
+.bi-arrow-right-circle {
+    color: rgb(102, 102, 102);
+}
+.card-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (max-width: 576px) {
+    .col-3 {
+        width: 100%;
+        text-align: center;
+    }
+    .col-9 {
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .col-3 {
+        width: 30%;
+        float: left;
+    }
+    .col-9 {
+        width: 70%;
+        float: left;
+    }
+}
+
+.emojies{
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.places{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
