@@ -1,19 +1,12 @@
 <?php
-
+use App\Http\Controllers\AcademicController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\SportingController;
+use App\Http\Controllers\TournamentsController;
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
+use PHPUnit\Framework\Attributes\Group;
+use PHPUnit\TextUI\Configuration\GroupCollection;
 
 Route::get('/signup', function () {
     return view('signup');
@@ -21,31 +14,26 @@ Route::get('/signup', function () {
 Route::get('/layout', function () {
     return view('Layout.layout');
 });
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/sporting', function () {
-    return view('sporting_events');
-});
-Route::get('/academic', function () {
-    return view('academic_events');
-});
-Route::get('/events', function () {
-    return view('sporting_events');
-});
+
+
+Route::get("/", [TournamentsController::class, "show_tournaments"]);
+Route::get("/tournament/{Tournament_ID}", [TournamentsController::class, "show_tournament_datails"]);
+
+Route::get('/sporting', [EventController::class, "show_sporting"]);
+Route::get("/academic", [EventController::class, "show_academic"]);
+Route::get('/events', [EventController::class, "show_sporting"]);
+Route::get("/event/{Event_ID}", [EventController::class, "show_details"]);
+
 Route::get('/login', function () {
     return view('login');
 });
 Route::get("/team_individual", [RoleController::class, "role"]);
-
 Route::get("/individual", function(){
     return view("individual_sign_up");
 });
-
 Route::get("/team", function(){
     return view("team_sign_up");
 });
-
 Route::get("/VersaQuest", function(){
     return view("VersaQuest");
 });

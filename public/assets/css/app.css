@@ -71,7 +71,9 @@ a {
 .home p {
     padding-left: 50px;
 }
-
+.text{
+    color: #4B91F1;
+}
 .home button {
     margin-left: 50px;
     padding: 15px;
@@ -207,4 +209,7 @@ a {
     width: 200px;
     justify-content: center;
     align-items: center;
+}
+.event_img{
+    border-radius: 30px;
 }

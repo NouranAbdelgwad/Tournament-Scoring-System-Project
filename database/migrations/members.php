@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('Name');
             $table->string('Email');
             $table->string('Password');
-            $table->bigInteger("Team_leader_college_ID")->unique();
-            $table->foreign('Team_leader_college_ID')->references('College_ID')->on('college_members')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->bigInteger("member_collge_ID")->unique();
+            $table->foreign('member_collge_ID')->references('College_ID')->on('college_members')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
         Schema::enableForeignKeyConstraints();

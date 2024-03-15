@@ -18,6 +18,13 @@ return new class extends Migration
             $table->unsignedBigInteger("Tournament_ID");
             $table->foreign('Tournament_ID')->references('Tournament_ID')->on('tournaments')->cascadeOnDelete()->cascadeOnUpdate();
             $table->string('Event_name');
+            $table->string("Format");
+            $table->string("location");
+            $table->string("Duration");
+            $table->string("Rules");
+            $table->string("Scoring");
+            $table->string("Excitement");
+            $table->string("img_URL");
             $table->date('Start_date');
             $table->date('End_date');
             $table->string('Description');

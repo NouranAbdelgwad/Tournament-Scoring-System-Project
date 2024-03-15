@@ -4,8 +4,8 @@
 @section('content')
     <div class="container mt-3">
         <div class="VersaQuest p-md-5 p-5">
-            <h1 class="text-light"><b>know more about VersaQuest</b></h1>
-            <p class="text-light"> Are you ready to showcase your skills and compete for glory? Look no further! Our cutting-edge scoring system is here to revolutionize the way you participate in tournaments. </p>
+            <h1 class="text-light"><b>{{$tournament->Tournament_name}}</b></h1>
+            <p class="text-light">{{$tournament->Description}}</p>
 
         </div>
         <div class="container">
@@ -16,6 +16,8 @@
                 <li>Each team or individual will face off in 5 thrilling events, ranging from sports to academic challenges.</li>
                 <li>Earn points based on your performance in each event to climb the leaderboard and claim victory.</li>
             </ul>
+            <h2>💸 Prizes</h2>
+            <p>{{$tournament->Prizes}}</p>
             <br>
             <h2 class="mt-3"><b>Take a look at the VersaQuest's events!</b></h2>
             <br>
