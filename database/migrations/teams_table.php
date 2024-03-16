@@ -18,10 +18,11 @@ return new class extends Migration
             $table->unsignedBigInteger("Tournament_ID")->unique();
             $table->foreign('Tournament_ID')->references('Tournament_ID')->on('tournaments')->cascadeOnDelete()->cascadeOnUpdate();
             $table->unsignedBigInteger("Event_ID")->unique();
-            $table->foreign('Event_ID')->references("Event_ID")->on("events")->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('Event_ID')->references("Event_ID")->on("events_update")->cascadeOnDelete()->cascadeOnUpdate();
             $table->bigInteger("Team_leader_college_ID")->unique();
             $table->foreign('Team_leader_college_ID')->references("College_ID")->on("college_members")->cascadeOnDelete()->cascadeOnUpdate();
             $table->enum('Status', ["accepted", "rejected", "winner"]);
+            $table->bigInteger("Score");
             $table->timestamps();
         });
         Schema::enableForeignKeyConstraints();

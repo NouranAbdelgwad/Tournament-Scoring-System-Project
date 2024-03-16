@@ -1,20 +1,12 @@
 <?php
-use App\Http\Controllers\AcademicController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\RoleController;
-use App\Http\Controllers\SportingController;
+use App\Http\Controllers\SuperAdminController;
 use App\Http\Controllers\TournamentsController;
+use App\Models\Super_admin;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\TextUI\Configuration\GroupCollection;
-
-Route::get('/signup', function () {
-    return view('signup');
-});
-Route::get('/layout', function () {
-    return view('Layout.layout');
-});
-
 
 Route::get("/", [TournamentsController::class, "show_tournaments"]);
 Route::get("/tournament/{Tournament_ID}", [TournamentsController::class, "show_tournament_datails"]);
@@ -24,6 +16,13 @@ Route::get("/academic", [EventController::class, "show_academic"]);
 Route::get('/events', [EventController::class, "show_sporting"]);
 Route::get("/event/{Event_ID}", [EventController::class, "show_details"]);
 
+Route::get("super-admin/show-tournaments", [SuperAdminController::class, "showTournaments"]);
+Route::get("super-admin/show-events", [SuperAdminController::class, "showEvents"]);
+Route::get("super-admin/show-admins", [SuperAdminController::class, "showAdmins"]);
+
+Route::get('/signup', function () {
+    return view('signup');
+});
 Route::get('/login', function () {
     return view('login');
 });
@@ -33,9 +32,6 @@ Route::get("/individual", function(){
 });
 Route::get("/team", function(){
     return view("team_sign_up");
-});
-Route::get("/VersaQuest", function(){
-    return view("VersaQuest");
 });
 Route::get("/teams_rank", function(){
     return view("teams_rank");

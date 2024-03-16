@@ -12,7 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::disableForeignKeyConstraints();
-
         Schema::create('individuals', function (Blueprint $table) {
             $table->id("Individual_ID");
             $table->string('Name');
@@ -21,15 +20,14 @@ return new class extends Migration
             $table->unsignedBigInteger("Tournament_ID");
             $table->foreign('Tournament_ID')->references('Tournament_ID')->on('tournaments')->cascadeOnDelete()->cascadeOnUpdate();
             $table->unsignedBigInteger("Event_ID");
-            $table->foreign('Event_ID')->references("Event_ID")->on("events")->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('Event_ID')->references("Event_ID")->on("events_update")->cascadeOnDelete()->cascadeOnUpdate();
             $table->bigInteger("college_ID")->unique();
             $table->foreign('College_ID')->references('College_ID')->on('college_members')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->bigInteger("Score");
             $table->timestamps();
         });
-
         Schema::enableForeignKeyConstraints();
     }
-
     /**
      * Reverse the migrations.
      */

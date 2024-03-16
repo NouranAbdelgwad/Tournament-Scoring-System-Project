@@ -43,7 +43,7 @@
                             <a class="nav-link" href="/teams_rank">Rank</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Completed</a>
+                            <a class="nav-link" href="/super-admin/show-tournaments">Leaderboard</a>
                         </li>
                     </ul>
                     <div class="profile"><img src="{{ asset('assets/images/Avatar2.png') }}" class="avatar"></div>

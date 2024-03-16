@@ -19,7 +19,7 @@ return new class extends Migration
             $table->bigInteger("College_ID")->unique();
             $table->foreign('College_ID')->references("College_ID")->on("college_members")->cascadeOnDelete()->cascadeOnUpdate();
             $table->unsignedBigInteger("Event_ID");
-            $table->foreign("Event_ID")->references("Event_ID")->on("events")->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign("Event_ID")->references("Event_ID")->on("events_update")->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }

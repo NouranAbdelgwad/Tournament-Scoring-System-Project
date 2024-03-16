@@ -5,9 +5,9 @@
 @section('content')
 <div class="container page">
 <div class="bg-light p-3 m-3 sign">
-    <h2 class="mt-3"><b>sign in</b></h2>
     <div class="row">
         <form action="" class="form sign-up-form col-6" method="POST">
+            <h2 class="mt-3"><b>sign in</b></h2>
             <label class="form-label">Email</label>
             <input type="email" placeholder="Enter your email" name="email" class="form-control">
             <label class="form-label">ID</label>
@@ -18,7 +18,7 @@
             </div>
         </form>
         <div class="col-6">
-            <img src="https://images.pexels.com/photos/1325681/pexels-photo-1325681.jpeg" class="home" alt="">
+            <img src="https://images.pexels.com/photos/1325681/pexels-photo-1325681.jpeg" class="login-img" alt="">
         </div>
     </div>
 </div>
