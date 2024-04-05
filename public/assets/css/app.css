@@ -212,6 +212,7 @@ a {
 }
 .event_img{
     border-radius: 30px;
+    object-fit: cover;
 }
 .login-img{
     height: 100%;
