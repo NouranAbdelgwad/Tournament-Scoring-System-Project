@@ -14,15 +14,13 @@ The college will be running a tournament for students to compete in a series of 
 
 You have been asked to design and develop a computer program to manage the scoring system for the tournament.
 
-Pseudocode:
+# Program Flow Pseudo Code
 
-// Program Flow Pseudo Code
-
-// Welcome Page and Tournament Description
+Welcome Page and Tournament Description
 OUTPUT "Welcome to the College's Tournament Website"
 OUTPUT "Description of the ongoing tournaments"
 
-// User Sign Up
+User Sign Up
 INPUT name, email, password, college_id
 // Store user data in database
 
