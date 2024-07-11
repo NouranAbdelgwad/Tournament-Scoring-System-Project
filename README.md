@@ -18,3 +18,6 @@ You have been asked to design and develop a computer program to manage the scori
 - Don't forget to import the tournament_scoring_system.sql
 - Don't forget to migrate the tables
 
+## website video
+
+
