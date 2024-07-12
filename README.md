@@ -19,5 +19,6 @@ You have been asked to design and develop a computer program to manage the scori
 - Don't forget to migrate the tables
 
 ## website video
-[![Watch the video](https://github.com/NouranAbdelgwad/Tournament-Scoring-System-Project/blob/master/Tournament-Scoring-System-Project.mp4)]
+
+https://github.com/user-attachments/assets/5e644812-7144-4538-af4f-f4cb07b1e667
 
